@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Lesson 6</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="m-4">
+    <header class="bg-white p-4">
+        <div class="relative z-30">
+            <img class="absolute z-30 h-24 w-32 rounded-full my-4" src="flag.png">
+        </div>
+        <img id="banner" class="mb-4 z-20" src="bannertwo.jpg">
+        
+        <!--START OF NAVIGATION MENU-->
+    <nav class="flex justify-between items-center w-[-92%] mx-auto">
+
+        <!--THIS DIV BELOW IS FOR ICON-->
+        <div>
+            
+        </div>
+        <!--END ICON DIV-->
+        
+        <!--LIST OF LINKS FOR NAV-->
+        <div class="z-50 nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                
+                <li>
+                    <a class="hover:text-slate-200 hover:bg-blue-600 p-2 hover:rounded-tl-lg hover:rounded-br-lg hover:drop-shadow-lg" href="index.html">Home</a>
+                </li>
+                
+                <li>
+                    <a class="hover:text-slate-200 hover:bg-blue-600 p-2 hover:rounded-tl-lg hover:rounded-br-lg hover:drop-shadow-lg" href="history.html">History</a>
+                </li>
+
+                <li>
+                    <a class="hover:text-slate-200 hover:bg-blue-600 p-2 hover:rounded-tl-lg hover:rounded-br-lg hover:drop-shadow-lg" href="schedule.html">Schedule</a>
+                </li>
+
+                <li>
+                    <a class="hover:text-slate-200 hover:bg-blue-600 p-2 hover:rounded-tl-lg hover:rounded-br-lg hover:drop-shadow-lg" href="tours.html">Tours</a>
+                </li>
+
+            </ul>
+        </div> 
+        <!--END LIST OF LINKS FOR NAV-->
+
+        <!--START MENU ICON-->
+        <div class="flex itmes-center gap-6 z-50">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+    
+            <!--<button onclick="onToggleMenu(this)" name="menu">
+                <svg class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>-->
+    
+        </div>
+        <!--END MENU ICON-->
+
+    </nav>
+
+    <!--END OF NAVIGATION MENU-->
+
+    </header>
+    
+
+    <main>
+
+        <div class="md:hidden border-2 w-5 flex justify-center">
+            <ion-icon onclick="onToggleMenu(sideNav)" class="cursor-pointer" name="menu"></ion-icon>
+        </div>
+ 
+        <section class="flex w-full h-full">
+
+            <div id="sideNav" class="flex flex-col max-md:hidden z-10 justify-self-start overflow-y-scroll scroll max-w-sm sticky left-0 top-0 h-96">
+                <p>Contents</p>
+                <hr>
+                <p>
+                    <a href="#banner" class="underline">(Top)</a>
+                </p>
+                <div class="flex flex-col ml-8">
+                    <a href="#design" class="text-linkcolor">Design and Construction Process</a>
+                    <a href="#origin" class="text-linkcolor">Origin</a>
+                    <a href="#dsy" class="text-linkcolor">Design, style, and symbolism</a>
+                    <a href="#announcement" class="text-linkcolor">Announcement and early work</a>
+                    <a href="#construction" class="text-linkcolor">Construction in France</a>
+    
+                </div>
+            </div>
+
+            <div class="ml-10 w-7/12">
+                <h1 class="text-3xl max-md:text-2xl">Statue of Liberty</h1>
+                <hr>
+                <div class="flex justify-between max-md:text-sm">
+                    <div class="flex justify-between space-x-4">
+                        <p class="">
+                            Article
+                        </p>
+                        <p>
+                            talk
+                        </p>
+                    </div>
+
+                    <div class="flex justify-between space-x-4 whitespace-nowrap">
+                        <p class="max-md:hidden">
+                            Read
+                        </p>
+                        <p class="max-md:hidden">
+                            View Source
+                        </p>
+                        <p class="max-md:hidden">
+                            View history
+                        </p>
+                        <p>
+                            tools
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex justify-between mb-4">
+                    <div>
+                        <p>
+                            From Wikipedia, the free encyclopedia
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Coordinates	40°41′21″N 74°2′40″W
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between space-x-2">
+                    <div>
+                        <p class="mb-2 ml-8">
+                            <a id="forotheruses">For other uses, see Statue of Liberty (disambiguation).</a>
+                        </p>
+                        <p>
+                            The Statue of Liberty (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886.</p>
+
+                        <p>
+                            The statue is a figure of Libertas, a robed Roman liberty goddess. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata inscribed JULY IV MDCCLXXVI (July 4, 1776 in Roman numerals), the date of the U.S. Declaration of Independence. A broken shackle and chain lie at her feet as she walks forward, commemorating the recent national abolition of slavery.[7] After its dedication, the statue became an icon of freedom and of the United States, seen as a symbol of welcome to immigrants arriving by sea.
+                        </p>
+                        <p>
+                            Bartholdi was inspired by a French law professor and politician, Édouard René de Laboulaye, who is said to have commented in 1865 that any monument raised to U.S. independence would properly be a joint project of the French and American peoples. The Franco-Prussian War delayed progress until 1875, when Laboulaye proposed that the French finance the statue and the United States provide the site and build the pedestal. Bartholdi completed the head and the torch-bearing arm before the statue was fully designed, and these pieces were exhibited for publicity at international expositions.
+                        </p>
+                        <p>
+                            The torch-bearing arm was displayed at the Centennial Exposition in Philadelphia in 1876, and in Madison Square Park in Manhattan from 1876 to 1882. Fundraising proved difficult, especially for the Americans, and by 1885 work on the pedestal was threatened by lack of funds. Publisher Joseph Pulitzer, of the New York World, started a drive for donations to finish the project and attracted more than 120,000 contributors, most of whom gave less than a dollar (equivalent to $30 in 2021). The statue was built in France, shipped overseas in crates, and assembled on the completed pedestal on what was then called Bedloe's Island. The statue's completion was marked by New York's first ticker-tape parade and a dedication ceremony presided over by President Grover Cleveland.
+                        </p>
+                        <p>
+                            The statue was administered by the United States Lighthouse Board until 1901 and then by the Department of War; since 1933 it has been maintained by the National Park Service as part of the Statue of Liberty National Monument, and is a major tourist attraction. Limited numbers of visitors can access the rim of the pedestal and the interior of the statue's crown from within; public access to the torch has been barred since 1916.
+                        </p>
+                        <p class="m-4">
+                            <a href="#banner" class="text-linkcolor underline">(Top)</a>
+                        </p>
+                        <br>
+                        <h2 class="text-2xl">
+                            <a id="design">Design and construction process</a>
+                        </h2>
+                        <hr>
+                        <h3 id="origin" class="text-xl my-4 font-bold">
+                            Origin
+                        </h3>
+                        <p>
+                            According to the National Park Service, the idea of a monument presented by the French people to the United States was first proposed by Édouard René de Laboulaye, president of the French Anti-Slavery Society and a prominent and important political thinker of his time. The project is traced to a mid-1865 conversation between Laboulaye, a staunch abolitionist, and Frédéric Bartholdi, a sculptor. In after-dinner conversation at his home near Versailles, Laboulaye, an ardent supporter of the Union in the American Civil War, is supposed to have said: "If a monument should rise in the United States, as a memorial to their independence, I should think it only natural if it were built by united effort—a common work of both our nations."[8] The National Park Service, in a 2000 report, however, deemed this a legend traced to an 1885 fundraising pamphlet, and that the statue was most likely conceived in 1870.[9] In another essay on their website, the Park Service suggested that Laboulaye was minded to honor the Union victory and its consequences, "With the abolition of slavery and the Union's victory in the Civil War in 1865, Laboulaye's wishes of freedom and democracy were turning into a reality in the United States. In order to honor these achievements, Laboulaye proposed that a gift be built for the United States on behalf of France. Laboulaye hoped that by calling attention to the recent achievements of the United States, the French people would be inspired to call for their own democracy in the face of a repressive monarchy."[10]
+                        </p>
+                        <p>
+                            According to sculptor Frédéric Auguste Bartholdi, who later recounted the story, Laboulaye's alleged comment was not intended as a proposal, but it inspired Bartholdi.[8] Given the repressive nature of the regime of Napoleon III, Bartholdi took no immediate action on the idea except to discuss it with Laboulaye. Bartholdi was in any event busy with other possible projects; in the late 1860s, he approached Isma'il Pasha, Khedive of Egypt, with a plan to build Progress or Egypt Carrying the Light to Asia,[11] a huge lighthouse in the form of an ancient Egyptian female fellah or peasant, robed and holding a torch aloft, at the northern entrance to the Suez Canal in Port Said. Sketches and models were made of the proposed work, though it was never erected. There was a classical precedent for the Suez proposal, the Colossus of Rhodes: an ancient bronze statue of the Greek god of the sun, Helios. This statue is believed to have been over 100 feet (30 m) high, and it similarly stood at a harbor entrance and carried a light to guide ships.[12] Both the khedive and Lesseps declined the proposed statue from Bartholdi, citing the expensive cost.[13] The Port Said Lighthouse was built instead, by François Coignet in 1869.
+                        </p>
+                        <p>
+                            Any large project was further delayed by the Franco-Prussian War, in which Bartholdi served as a major of militia. In the war, Napoleon III was captured and deposed. Bartholdi's home province of Alsace was lost to the Prussians, and a more liberal republic was installed in France.[8] As Bartholdi had been planning a trip to the United States, he and Laboulaye decided the time was right to discuss the idea with influential Americans.[14] In June 1871, Bartholdi crossed the Atlantic, with letters of introduction signed by Laboulaye.[15]
+                        </p>
+                        <p>
+                            Arriving at New York Harbor, Bartholdi focused on Bedloe's Island (now named Liberty Island) as a site for the statue, struck by the fact that vessels arriving in New York had to sail past it. He was delighted to learn that the island was owned by the United States government—it had been ceded by the New York State Legislature in 1800 for harbor defense. It was thus, as he put it in a letter to Laboulaye: "land common to all the states."[16] As well as meeting many influential New Yorkers, Bartholdi visited President Ulysses S. Grant, who assured him that it would not be difficult to obtain the site for the statue.[17] Bartholdi crossed the United States twice by rail, and met many Americans who he thought would be sympathetic to the project.[15] But he remained concerned that popular opinion on both sides of the Atlantic was insufficiently supportive of the proposal, and he and Laboulaye decided to wait before mounting a public campaign.[18]
+                        </p>
+                        <p>
+                            Bartholdi had made a first model of his concept in 1870.[19] The son of a friend of Bartholdi's, artist John LaFarge, later maintained that Bartholdi made the first sketches for the statue during his visit to La Farge's Rhode Island studio. Bartholdi continued to develop the concept following his return to France.[19] He also worked on a number of sculptures designed to bolster French patriotism after the defeat by the Prussians. One of these was the Lion of Belfort, a monumental sculpture carved in sandstone below the fortress of Belfort, which during the war had resisted a Prussian siege for over three months. The defiant lion, 73 feet (22 m) long and half that in height, displays an emotional quality characteristic of Romanticism, which Bartholdi would later bring to the Statue of Liberty.[20]
+                        </p>
+                        <p class="m-4">
+                            <a href="#banner" class="text-linkcolor underline">(Top)</a>
+                        </p>
+                        <h3 id="dsy" class="text-xl my-4 font-bold">
+                            Design, style, and symbolism
+                        </h3>
+                        <p>
+                            Bartholdi and Laboulaye considered how best to express the idea of American liberty.[21] In early American history, two female figures were frequently used as cultural symbols of the nation.[22] One of these symbols, the personified Columbia, was seen as an embodiment of the United States in the manner that Britannia was identified with the United Kingdom, and Marianne came to represent France. Columbia had supplanted the traditional European Personification of the Americas as an "Indian princess", which had come to be regarded as uncivilized and derogatory toward Americans.[22] The other significant female icon in American culture was a representation of Liberty, derived from Libertas, the goddess of freedom widely worshipped in ancient Rome, especially among emancipated slaves. A Liberty figure adorned most American coins of the time,[21] and representations of Liberty appeared in popular and civic art, including Thomas Crawford's Statue of Freedom (1863) atop the dome of the United States Capitol Building.[21]
+                        </p>
+                        <p>
+                            The statue's design evokes iconography evident in ancient history including the Egyptian goddess Isis, the ancient Greek deity of the same name, the Roman Columbia and the Christian iconography of the Virgin Mary.[23][24]
+                        </p>
+                        <p>
+                            Artists of the 18th and 19th centuries striving to evoke republican ideals commonly used representations of Libertas as an allegorical symbol.[21] A figure of Liberty was also depicted on the Great Seal of France.[21] However, Bartholdi and Laboulaye avoided an image of revolutionary liberty such as that depicted in Eugène Delacroix's famed Liberty Leading the People (1830). In this painting, which commemorates France's July Revolution, a half-clothed Liberty leads an armed mob over the bodies of the fallen.[22] Laboulaye had no sympathy for revolution, and so Bartholdi's figure would be fully dressed in flowing robes.[22] Instead of the impression of violence in the Delacroix work, Bartholdi wished to give the statue a peaceful appearance and chose a torch, representing progress, for the figure to hold.[25]
+                        <p>
+                            Crawford's statue was designed in the early 1850s. It was originally to be crowned with a pileus, the cap given to emancipated slaves in ancient Rome. Secretary of War Jefferson Davis, a Southerner who would later serve as President of the Confederate States of America, was concerned that the pileus would be taken as an abolitionist symbol. He ordered that it be changed to a helmet.[26] Delacroix's figure wears a pileus,[22] and Bartholdi at first considered placing one on his figure as well. Instead, he used a radiate diadem, or crown, to top its head.[27] In so doing, he avoided a reference to Marianne, who invariably wears a pileus.[28] The seven rays form a halo or aureole.[29] They evoke the sun, the seven seas, and the seven continents,[30] and represent another means, besides the torch, whereby Liberty enlightens the world.[25]
+                        </p>
+                        <p>
+                            Bartholdi's early models were all similar in concept: a female figure in neoclassical style representing liberty, wearing a stola and pella (gown and cloak, common in depictions of Roman goddesses) and holding a torch aloft. According to popular accounts, the face was modeled after that of Charlotte Beysser Bartholdi, the sculptor's mother,[31] but Regis Huber, the curator of the Bartholdi Museum is on record as saying that this, as well as other similar speculations, have no basis in fact.[32] He designed the figure with a strong, uncomplicated silhouette, which would be set off well by its dramatic harbor placement and allow passengers on vessels entering New York Bay to experience a changing perspective on the statue as they proceeded toward Manhattan. He gave it bold classical contours and applied simplified modeling, reflecting the huge scale of the project and its solemn purpose.[25] Bartholdi wrote of his technique:
+                        </p>
+                        <q>
+                            The surfaces should be broad and simple, defined by a bold and clear design, accentuated in the important places. The enlargement of the details or their multiplicity is to be feared. By exaggerating the forms, in order to render them more clearly visible, or by enriching them with details, we would destroy the proportion of the work. Finally, the model, like the design, should have a summarized character, such as one would give to a rapid sketch. Only it is necessary that this character should be the product of volition and study, and that the artist, concentrating his knowledge, should find the form and the line in its greatest simplicity.[33]
+                        </q>
+                        <p>
+                            Bartholdi made alterations in the design as the project evolved. Bartholdi considered having Liberty hold a broken chain, but decided this would be too divisive in the days after the Civil War. The erected statue does stride over a broken chain, half-hidden by her robes and difficult to see from the ground.[27] Bartholdi was initially uncertain of what to place in Liberty's left hand; he settled on a tabula ansata,[34] used to evoke the concept of law.[35] Though Bartholdi greatly admired the United States Constitution, he chose to inscribe JULY IV MDCCLXXVI on the tablet, thus associating the date of the country's Declaration of Independence with the concept of liberty.[34]
+                        </p>
+                        <p>
+                            Bartholdi interested his friend and mentor, architect Eugène Viollet-le-Duc, in the project.[32] As chief engineer,[32] Viollet-le-Duc designed a brick pier within the statue, to which the skin would be anchored.[36] After consultations with the metalwork foundry Gaget, Gauthier & Co., Viollet-le-Duc chose the metal which would be used for the skin, copper sheets, and the method used to shape it, repoussé, in which the sheets were heated and then struck with wooden hammers.[32][37] An advantage of this choice was that the entire statue would be light for its volume, as the copper need be only 0.094 inches (2.4 mm) thick. Bartholdi had decided on a height of just over 151 feet (46 m) for the statue, double that of Italy's Sancarlone and the German statue of Arminius, both made with the same method.[38]
+                        </p>
+                        <p class="m-4">
+                            <a href="#banner" class="text-linkcolor underline">(Top)</a>
+                        </p>
+                        <h3 id="announcement" class="text-xl my-4 font-bold">
+                            Announcement and early work
+                        </h3>
+                        <p>
+                            By 1875, France was enjoying improved political stability and a recovering postwar economy. Growing interest in the upcoming Centennial Exposition in Philadelphia led Laboulaye to decide it was time to seek public support.[39] In September 1875, he announced the project and the formation of the Franco-American Union as its fundraising arm. With the announcement, the statue was given a name, Liberty Enlightening the World.[40] The French would finance the statue; Americans would be expected to pay for the pedestal.[41] The announcement provoked a generally favorable reaction in France, though many Frenchmen resented the United States for not coming to their aid during the war with Prussia.[40] French monarchists opposed the statue, if for no other reason than it was proposed by the liberal Laboulaye, who had recently been elected a senator for life.[41] Laboulaye arranged events designed to appeal to the rich and powerful, including a special performance at the Paris Opera on April 25, 1876, that featured a new cantata by composer Charles Gounod. The piece was titled La Liberté éclairant le monde, the French version of the statue's announced name.[40]
+                        </p>
+                        <p>
+                            Initially focused on the elites, the Union was successful in raising funds from across French society. Schoolchildren and ordinary citizens gave, as did 181 French municipalities. Laboulaye's political allies supported the call, as did descendants of the French contingent in the American Revolutionary War. Less idealistically, contributions came from those who hoped for American support in the French attempt to build the Panama Canal. The copper may have come from multiple sources and some of it is said to have come from a mine in Visnes, Norway,[42] though this has not been conclusively determined after testing samples.[43] According to Cara Sutherland in her book on the statue for the Museum of the City of New York, 200,000 pounds (91,000 kg) was needed to build the statue, and the French copper industrialist Eugène Secrétan donated 128,000 pounds (58,000 kg) of copper.[44]
+                        </p>
+                        <p class="m-4">
+                            <a href="#banner" class="text-linkcolor underline">(Top)</a>
+                        </p>
+                        <h3 id="construction" class="text-xl my-4 font-bold">
+                            Construction in France
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum temporibus inventore vitae ipsa iste ad impedit soluta esse omnis beatae assumenda reiciendis magni culpa exercitationem, cupiditate blanditiis, ullam provident porro!
+                        </p>
+                        <p class="m-4">
+                            <a href="#banner" class="text-linkcolor underline">(Top)</a>
+                        </p>
+                        <hr class="my-4">
+                        <table class="border-2 text-center">
+                            <thead>
+                                <tr>
+                                    <th class="col-span-3">
+                                        External Links to Information on the Statue and US History
+                                    </th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Statue of Liberty
+                                    </td>
+                                    <td>
+                                        <a href="https://www.gettyimages.com/photos/statue-of-liberty" class="text-linkcolor">Images</a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.britannica.com/topic/Statue-of-Liberty" class="text-linkcolor">Location</a>
+                                    </td>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Statue_of_Liberty#Construction_in_France" class="text-linkcolor">Statue of Liberty Wiki</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Frederic Auguste Bartholdi
+                                    </td>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Auguste_Bartholdi" class="text-linkcolor">History</a>
+                                    </td>
+                                    <td>
+                                       <a href="https://www.gettyimages.com/photos/frederic-bartholdi" class="text-linkcolor">Images</a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.nga.gov/collection/artist-info.6761.html#works" class="text-linkcolor">Works</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        National Symbols of the United States
+                                    </td>
+                                    <td>
+                                       <a href="https://www.britannica.com/topic/flag-of-the-United-States-of-America" class="text-linkcolor">Flag</a>
+                                    </td>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States" class="text-linkcolor">Seals</a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.unitedstatesnow.org/what-is-the-national-bird-of-the-usa.htm" class="text-linkcolor">National Bird</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    
+
+
+                
+                    <div class="flex flex-col w-fit h-2/4 border-2 border-black bg-gray-300">
+                        <h3 class="mx-4 whitespace-nowrap text-center font-bold text-sm">
+                            Statue of Liberty<br>Liberty Enlightening the world
+                        </h3>
+                        <img class="m-2" src="375px-Lady_Liberty_under_a_blue_sky_(cropped).jpg">
+                        <table class="border-2 m-2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Location
+                                    </th>
+                                    <td>
+                                        Liberty Island New York City
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td class="font-bold">
+                                        Coordinates
+                                    </td>
+                                    <td>
+                                        40°41′21″N 74°2′40″W
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Height
+                                    </td>
+                                    <td>
+                                        Height of the copper statue (to torch): 151 feet 1 inch (46 meters)
+                                    <br>
+                                    From ground level to torch: 305 feet 1 inch (93 meters)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Dedicated
+                                    </td>
+                                    <td>
+                                        October 28, 1886
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Restored
+                                    </td>
+                                    <td>
+                                        1938, 1984-1986, 2011-2012
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Sculptor
+                                    </td>
+                                    <td>
+                                        Frederic Auguste Bartholdi
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Visitors
+                                    </td>
+                                    <td>
+                                        3.2 million (in 2009)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Governing body
+                                    </td>
+                                    <td>
+                                        National Park Service
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold">
+                                        Website
+                                    </td>
+                                    <td>
+                                        www.nps.gov/stli
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <div>
+                            
+                            <div class="my-2">
+                                <p class="border-4 border-yellow-400 text-blue-700 font-bold">
+                                    UNESCO World Heritage Site
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+       
+    </main>
+
+   </div>
+   
+   <div>
+    <footer class="z-0 bg-white dark:bg-gray-900">
+        <div class="z-0 container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+           <!--<a href="#">
+                <img class="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
+            </a>-->
+        
+            <!--WILL WORK ON COPYRIGHT LATER-->
+            <p class="text-sm text-gray-600 dark:text-gray-300">Designed & Built by Sarah Perez-Anderson</p>
+        
+            <div class="flex -mx-2">
+
+                <!--GITHUB ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400" aria-label="Github">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                        </path>
+                    </svg>
+                </a>
+
+                <!--INDEED ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" aria-label="Github">
+                    <ion-icon class="w-5 h-5" name="logo-linkedin"></ion-icon>
+                </a>
+
+                <!--TWITCH ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-purple-600 dark:hover:text-blue-400" aria-label="Github">
+                    <ion-icon class="w-5 h-5" name="logo-twitch"></ion-icon>
+                </a>
+
+                <!--REDDIT ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-orange-600 dark:hover:text-blue-400" aria-label="Reddit">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z">
+                        </path>
+                    </svg>
+                </a>
+
+                <!--INSTAGRAM ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-pink-600 dark:hover:text-blue-400" aria-label="Github">
+                    <ion-icon class="w-5 h-5" name="logo-instagram"></ion-icon>
+                </a>
+
+                <!--CODEPEN ICON LINK-->
+                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400" aria-label="Github">
+                    <ion-icon class="w-5 h-5" name="logo-codepen"></ion-icon>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+   </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
